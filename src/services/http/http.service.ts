@@ -12,10 +12,9 @@ export default class HttpService {
   }
 
   public getDataAndSetStore(): void {
-    axios.get('/myUrl')
-      .then((res) => {
-        Store.setData(res.data);
-      });
+    axios.get('/myUrl').then((res) => {
+      Store.setData(res.data);
+    });
   }
 
 }
